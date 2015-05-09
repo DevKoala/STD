@@ -1,15 +1,43 @@
+/** Variables **/
 $grey: #e9e9e9;
+$blue: #1db4f7;
 
 
+/** Fonts **/
+@font-face {
+    font-family: 'AgencyFB';
+    src: url('../fonts/Agency FB.TTF');
+}
 
-
+/** Main code **/
 * {
 	margin: 0;
 	padding: 0;
 }
 
+
+/** Header **/
 .header {
 	height: 105px;
 	width: 100%;
 	background-color: $grey;
+
+	.logo {
+		width: 13.6%;
+		height: 100%;
+		margin-left: 110px;
+		line-height: 78px;
+
+		img {
+			max-height: 65%;
+		}
+
+		.chlen {
+			display: inline-block;
+			font-family: 'AgencyFB';
+			font-size: 27px;
+			color: $blue;
+			margin-left: 5px;
+		}
+	}
 }
